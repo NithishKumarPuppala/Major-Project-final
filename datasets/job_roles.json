@@ -1,0 +1,37 @@
+{
+  "roles": [
+    {
+      "key": "software_dev",
+      "title": "Software Developer",
+      "description": "Builds and maintains software applications and systems.",
+      "required_skills": ["python", "java", "sql", "git", "data structures", "oop"],
+      "preferred_skills": ["javascript", "flask", "django", "rest api", "docker"],
+      "certifications": ["AWS Cloud Practitioner", "Oracle Java SE"]
+    },
+    {
+      "key": "data_analyst",
+      "title": "Data Analyst",
+      "description": "Analyzes data to generate insights and dashboards.",
+      "required_skills": ["sql", "excel", "statistics", "data visualization", "python"],
+      "preferred_skills": ["power bi", "tableau", "pandas", "numpy"],
+      "certifications": ["Google Data Analytics", "Microsoft PL-300"]
+    },
+    {
+      "key": "cybersecurity_analyst",
+      "title": "Cybersecurity Analyst",
+      "description": "Protects systems by monitoring and responding to threats.",
+      "required_skills": ["networking", "linux", "security", "incident response", "risk assessment"],
+      "preferred_skills": ["siem", "python", "vulnerability assessment", "wireshark"],
+      "certifications": ["CompTIA Security+", "CEH"]
+    },
+    {
+      "key": "ml_engineer",
+      "title": "Machine Learning Engineer",
+      "description": "Builds ML models and deploys them into applications.",
+      "required_skills": ["python", "machine learning", "statistics", "data preprocessing"],
+      "preferred_skills": ["scikit-learn", "tensorflow", "pandas", "model deployment"],
+      "certifications": ["Google ML Engineer", "AWS ML Specialty"]
+    }
+  ]
+}
+

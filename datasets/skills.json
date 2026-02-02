@@ -1,0 +1,48 @@
+{
+  "technical": [
+    "python",
+    "java",
+    "c++",
+    "sql",
+    "excel",
+    "html",
+    "css",
+    "javascript",
+    "react",
+    "flask",
+    "django",
+    "rest api",
+    "git",
+    "docker",
+    "linux",
+    "networking",
+    "data structures",
+    "oop",
+    "statistics",
+    "data visualization",
+    "power bi",
+    "tableau",
+    "pandas",
+    "numpy",
+    "machine learning",
+    "scikit-learn",
+    "tensorflow",
+    "nlp",
+    "cybersecurity",
+    "risk assessment",
+    "incident response",
+    "vulnerability assessment",
+    "wireshark"
+  ],
+  "soft": [
+    "communication",
+    "teamwork",
+    "problem solving",
+    "leadership",
+    "adaptability",
+    "critical thinking",
+    "time management",
+    "collaboration"
+  ]
+}
+

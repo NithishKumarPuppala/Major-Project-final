@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row g-4">
+  <div class="col-lg-7">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h4 class="card-title">Upload Resume</h4>
+        <p class="text-muted">Upload a PDF or DOCX resume and select a target job role.</p>
+        <form action="{{ url_for('analyze') }}" method="post" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label class="form-label">Resume File</label>
+            <input class="form-control" type="file" name="resume_file" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Target Job Role</label>
+            <select class="form-select" name="role_key" required>
+              <option value="">Select role</option>
+              {% for role in roles %}
+              <option value="{{ role.key }}">{{ role.title }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Job Description (optional)</label>
+            <textarea class="form-control" name="job_description" rows="4"
+              placeholder="Paste a job description to compare. If left empty, a default description is used."></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Analyze Resume</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-5">
+    <div class="card bg-light h-100">
+      <div class="card-body">
+        <h5>What you will get</h5>
+        <ul class="list-unstyled">
+          <li>Resume score and role match</li>
+          <li>Skill gap analysis</li>
+          <li>Course and certification recommendations</li>
+          <li>Downloadable report</li>
+        </ul>
+        <div class="mt-4">
+          <h6>Predefined Roles</h6>
+          <ul class="small text-muted">
+            {% for role in roles %}
+            <li>{{ role.title }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
